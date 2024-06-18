@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/user/register",
+        "https://job-seeking-backend-deployment-vplq.onrender.com/api/v1/user/register",
         { name, phone, email, role, password },
         {
           headers: {
@@ -73,7 +73,7 @@ const Register = () => {
               <div>
                 <input
                   type="text"
-                  placeholder="Zeeshan"
+                  placeholder="suryateja"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -85,7 +85,7 @@ const Register = () => {
               <div>
                 <input
                   type="email"
-                  placeholder="zk@gmail.com"
+                  placeholder="suryateja@gmail.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
